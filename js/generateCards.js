@@ -66,7 +66,6 @@ const imageURLs = [
 const cardMaker = async () => {
   let cards = "";
   for (let i = 0; i < imageURLs.length; i++) {
-    console.log(imageURLs[i])
     const card = `
       <div class="card" style="width: 15rem">
         <img src="${imageURLs[i].path}" class="card-img-top" alt="ruby" />
