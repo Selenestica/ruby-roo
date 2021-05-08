@@ -1,4 +1,6 @@
 const cardContainer = document.getElementById("card-container")
+const modalBody = document.getElementById("modalBody")
+const imageModalLabel = document.getElementById("imageModalLabel")
 const URL = "https://rubyroophotos.s3.us-east-2.amazonaws.com/"
 const imageURLs = [
   {path: `${URL}20200908_172635.jpg`, text: "Ruby with her ball"}, 
@@ -67,16 +69,25 @@ const cardMaker = async () => {
   let cards = "";
   for (let i = 0; i < imageURLs.length; i++) {
     const card = `
-      <div class="card" style="width: 15rem">
-        <img src="${imageURLs[i].path}" class="card-img-top" alt="ruby" />
-        <div class="card-body">
-          <p style="text-align: center" class="card-text">${imageURLs[i].text}</p>
+      <button type="button" onclick="generateModal('${imageURLs[i].text}', '${imageURLs[i].path}')" class="modalButton" data-toggle="modal" data-target="#imageModal">
+        <div class="card" style="width: 15rem;">
+          <img src="${imageURLs[i].path}" class="card-img-top" alt="ruby" />
+          <div class="card-body">
+            <p style="text-align: center" class="card-text">${imageURLs[i].text}</p>
+          </div>
         </div>
-      </div>
+      </button>
     `
     cards += card
   }
   cardContainer.innerHTML = cards
+}
+
+const generateModal = (text, path) => {
+  modalBody.innerHTML = `
+      <img src="${path}" id="modalImage" class="card-img-top" alt="ruby" />
+  `
+  imageModalLabel.innerHTML = text 
 }
 
 cardMaker()

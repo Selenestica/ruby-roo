@@ -6,6 +6,47 @@ body {
   background-size: cover;
 }
 
-#card-container > div {
+#card-container > button {
   margin: 1rem;
+}
+
+.modalButton {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.modalButton:focus {
+  outline: none;
+}
+
+#modalImage {
+  height: calc(100vh - 120px);
+  max-height: calc(100vh - 190px);
+  width: auto;
+}
+
+.modal-body {
+  padding: 0rem !important;
+}
+
+.modal-open .modal {
+  width: inherit;
+}
+
+body {
+  position: relative;
+}
+
+#imageModal {
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  max-width: 100%;
 }
