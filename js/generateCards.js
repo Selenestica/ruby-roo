@@ -63,18 +63,33 @@ const imageURLs = [
   {path: `${URL}IMG_4735.jpg`, text: "Meek Ruby"},
   {path: `${URL}IMG_4672.jpg`, text: "Savage Ruby"},
   {path: `${URL}IMG_4674.jpg`, text: "Ruby not in her bed"},
+  {path: `${URL}new-lawn-ruby.jpg`, text: "Ruby counting cars"},
+  {path: `${URL}ravenous-ruby.jpg`, text: "Ravenous Ruby"},
+  {path: `${URL}ruby-dick.jpg`, text: "Ruby Dick"},
+  {path: `${URL}64115390307__46523B1F-CE3A-4320-A42E-C03092760659.mp4`, text: "Ruby being a weirdo"},
+  {path: `${URL}64018655287__99377EF7-DB99-4C6C-A379-3EBFA900952C.mp4`, text: "Ruby the destroyer"},
+  {path: `${URL}64064709330__A65A77D1-B674-46C4-BF43-909C90402D98.mp4`, text: "Ruby want a cracker"},
 ]
 
 const cardMaker = async () => {
   let cards = "";
   for (let i = 0; i < imageURLs.length; i++) {
+    let content;
+    if (imageURLs[i].path.slice(-3) === "mp4" || imageURLs[i].path.slice(-3) === "MP4") {
+      console.log(imageURLs[i].path.slice(-3))
+      content = `
+        <video style="width: 240px; height: 317.33px;" class="card-img-top">
+          <source src="${imageURLs[i].path}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> 
+      `
+    } else {
+      content = `<img src="${imageURLs[i].path}" class="card-img-top" alt="ruby" />`
+    }
     const card = `
       <button type="button" onclick="generateModal('${imageURLs[i].text}', '${imageURLs[i].path}')" class="modalButton" data-toggle="modal" data-target="#imageModal">
         <div class="card" style="width: 15rem;">
-          <img src="${imageURLs[i].path}" class="card-img-top" alt="ruby" />
-          <div class="card-body">
-            <p style="text-align: center" class="card-text">${imageURLs[i].text}</p>
-          </div>
+          ${content}
         </div>
       </button>
     `
@@ -84,9 +99,20 @@ const cardMaker = async () => {
 }
 
 const generateModal = (text, path) => {
-  modalBody.innerHTML = `
+  let modalContent;
+  if (path.slice(-3) === "mp4" || path.slice(-3) === "MP4") {
+    modalContent = `
+      <video controls id="modalImage" autoplay class="card-img-top">
+        <source src="${path}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> 
+    `
+  } else {
+    modalContent = `
       <img src="${path}" id="modalImage" class="card-img-top" alt="ruby" />
   `
+  }
+  modalBody.innerHTML = modalContent
   imageModalLabel.innerHTML = text 
 }
 
