@@ -78,8 +78,6 @@ const imageURLs = [
   {path: `${URL}IMG_4788.mp4`, text: "Food motivated Ruby"},
 ]
 
-// is it working?
-
 const cardMaker = async () => {
   let cards = "";
   for (let i = 0; i < imageURLs.length; i++) {
