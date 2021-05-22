@@ -83,7 +83,6 @@ const cardMaker = async () => {
   for (let i = 0; i < imageURLs.length; i++) {
     let content;
     if (imageURLs[i].path.slice(-3) === "mp4" || imageURLs[i].path.slice(-3) === "MP4") {
-      console.log(imageURLs[i].path.slice(-3))
       content = `
         <video style="width: 240px; height: 317.33px;" class="card-img-top">
           <source src="${imageURLs[i].path}" type="video/mp4">
