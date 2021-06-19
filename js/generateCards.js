@@ -76,12 +76,24 @@ const imageURLs = [
   {path: `${URL}snooping-ruby.jpg`, text: "Snooping Ruby"},
   {path: `${URL}ruby-and-summit.jpg`, text: "Ruby and Summit"},
   {path: `${URL}IMG_4788.mp4`, text: "Food motivated Ruby"},
+
+  {path: `${URL}IMG_4944.jpg`, text: "Ruby and Kona"},
+  {path: `${URL}IMG_4939.jpg`, text: "Ruby chillin with the homies"},
+  {path: `${URL}IMG_4936.jpg`, text: "Cradled Ruby"},
+  {path: `${URL}IMG_4869.JPG`, text: "Ruby with Saki"},
+  {path: `${URL}IMG_4854.jpg`, text: "Soaked Ruby"},
+  {path: `${URL}IMG_4853.jpg`, text: "Ruby watching Momma play Sims"},
+  {path: `${URL}IMG_4850.jpg`, text: "Ruby hates greens"},
+  {path: `${URL}IMG_4845.jpg`, text: "Passenger Ruby"},
+  {path: `${URL}64504697977__7CF4414E-6FF6-496A-B7C4-9AC97F0F345E.jpg`, text: "Broken neck Ruby"},
+  {path: `${URL}64364263628__99756861-1EDF-4ED1-87FF-1EC7004EC230.jpg`, text: "Glorious Ruby"},
 ]
 
 const cardMaker = async () => {
   let cards = "";
   for (let i = 0; i < imageURLs.length; i++) {
     let content;
+    const text = imageURLs[i].text
     if (imageURLs[i].path.slice(-3) === "mp4" || imageURLs[i].path.slice(-3) === "MP4") {
       content = `
         <video style="width: 240px; height: 317.33px;" class="card-img-top">
@@ -90,10 +102,10 @@ const cardMaker = async () => {
         </video> 
       `
     } else {
-      content = `<img src="${imageURLs[i].path}" class="card-img-top" alt="ruby" />`
+      content = `<img src="${imageURLs[i].path}" class="card-img-top" alt="${text}" />`
     }
     const card = `
-      <button type="button" onclick="generateModal('${imageURLs[i].text}', '${imageURLs[i].path}')" class="modalButton" data-toggle="modal" data-target="#imageModal">
+      <button type="button" onclick="generateModal('${text}', '${imageURLs[i].path}')" class="modalButton" data-toggle="modal" data-target="#imageModal">
         <div class="card" style="width: 15rem;">
           ${content}
         </div>
