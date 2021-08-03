@@ -159,7 +159,7 @@ const imageURLs = [
         text: "Scavenger Ruby"
     },
     {
-        path: `${URL}64364263628__99756861-1EDF-4ED1-87FF-1EC7004EC230.jpg`,
+        path: `${URL}IMG_5075.MOV`,
         text: "Ruby shaking a fish"
     }
 ];
