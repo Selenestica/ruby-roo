@@ -155,12 +155,26 @@ const imageURLs = [
         text: "Ruby amongst her toys"
     },
     {
-        path: `${URL}64677151515__783B9C67-6DB4-4B55-B151-D95A3EE1361A.MOV`,
+        path: `${URL}64677151515__783B9C67-6DB4-4B55-B151-D95A3EE1361A.mp4`,
         text: "Scavenger Ruby"
     },
     {
-        path: `${URL}IMG_5075.MOV`,
+        path: `${URL}IMG_5075.mp4`,
         text: "Ruby shaking a fish"
+    },
+    { path: `${URL}IMG_5366.jpg`, text: "Ruby relaxed with Squid" },
+    { path: `${URL}IMG_5250.jpg`, text: "Dashboard Ruby" },
+    { path: `${URL}IMG_5204.jpg`, text: "Ecstasy Ruby" },
+    { path: `${URL}IMG_5187.jpg`, text: "Fat Neck Ruby" },
+    { path: `${URL}IMG_5057.jpg`, text: "Fish Chair Ruby" },
+    { path: `${URL}IMG_5012.mp4`, text: "Dance Ruby, Dance!" },
+    {
+        path: `${URL}64987400164__D4A99CD6-6E63-42AE-87C2-088FFDA975C6.jpg`,
+        text: "Inconsolable Ruby"
+    },
+    {
+        path: `${URL}64641552711__C6528714-C3F1-4E9E-9819-C3AF97A099FA.jpg`,
+        text: "Ruby's famous Google photo"
     }
 ];
 
