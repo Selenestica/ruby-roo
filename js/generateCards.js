@@ -219,7 +219,7 @@ const generateModal = (text, path) => {
     `;
     } else {
         modalContent = `
-      <img src="${path}" id="modalImage" class="card-img-top" alt="ruby" />
+      <img src="${path}" id="modalImage" class="card-img-top" alt="ruby" loading="lazy" />
   `;
     }
     modalBody.innerHTML = modalContent;
