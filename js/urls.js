@@ -189,7 +189,7 @@ const imageURLs = [
         text: "Downward Dog Ruby"
     },
     {
-        path: `${URL}rubyshoes.mp4`,
+        path: `${URL}rubyshoesy.mp4`,
         text: "Ruby wearing shoes"
     }
 ];
