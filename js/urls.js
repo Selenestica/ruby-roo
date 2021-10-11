@@ -170,7 +170,7 @@ const imageURLs = [
     },
     {
         path: `${URL}64641552711__C6528714-C3F1-4E9E-9819-C3AF97A099FA.jpg`,
-        text: "Ruby's famous Google photo"
+        text: "Rubys famous Google photo"
     },
     {
         path: `${URL}rubyandsquidplaying.mp4`,
