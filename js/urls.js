@@ -171,5 +171,25 @@ const imageURLs = [
     {
         path: `${URL}64641552711__C6528714-C3F1-4E9E-9819-C3AF97A099FA.jpg`,
         text: "Ruby's famous Google photo"
+    },
+    {
+        path: `${URL}rubyandsquidplaying.mp4`,
+        text: "Puzzled Ruby"
+    },
+    {
+        path: `${URL}IMG_5464.JPG`,
+        text: "Ruby locking eyes"
+    },
+    {
+        path: `${URL}IMG_5453.jpg`,
+        text: "Skeevin Ruby"
+    },
+    {
+        path: `${URL}IMG_5406.jpg`,
+        text: "Downward Dog Ruby"
+    },
+    {
+        path: `${URL}rubyshoes.mp4`,
+        text: "Ruby wearing shoes"
     }
 ];
