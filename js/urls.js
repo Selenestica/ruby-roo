@@ -127,7 +127,6 @@ const imageURLs = [
 
     { path: `${URL}IMG_4944.jpg`, text: "Ruby and Kona" },
     { path: `${URL}IMG_4939.jpg`, text: "Ruby chillin with the homies" },
-    { path: `${URL}IMG_4936.jpg`, text: "Cradled Ruby" },
     { path: `${URL}IMG_4869.JPG`, text: "Ruby with Saki" },
     { path: `${URL}IMG_4854.jpg`, text: "Soaked Ruby" },
     { path: `${URL}IMG_4853.jpg`, text: "Ruby watching Momma play Sims" },
