@@ -191,5 +191,29 @@ const imageURLs = [
     {
         path: `${URL}rubyshoesy.mp4`,
         text: "Ruby wearing shoes"
+    },
+    {
+        path: `${URL}67517865385__B7E1B460-E380-44B8-A887-C94A46558181.jpg`,
+        text: "Spring time Ruby"
+    },
+    {
+        path: `${URL}IMG_6313.jpg`,
+        text: "Rubys pearly whites"
+    },
+    {
+        path: `${URL}IMG_6618.mp4`,
+        text: "High energy Ruby"
+    },
+    {
+        path: `${URL}IMG_6499.jpg`,
+        text: "Ruby with her nap buddy"
+    },
+    {
+        path: `${URL}IMG_6459.mp4`,
+        text: "Ruby meets Dobby"
+    },
+    {
+        path: `${URL}IMG_6513.mp4`,
+        text: "Rubys new chew toy"
     }
 ];
